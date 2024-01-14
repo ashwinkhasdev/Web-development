@@ -1,20 +1,72 @@
-<html>
+<html> <!--demonstrate css working-->
     <head>
         <title>Div tag </title>
+
+        <style>
+            
+            .main{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(173, 165, 221);
+            
+            }
+        #Row1{
+            width: 300px;
+            height: 150px;
+            background-color: blueviolet;
+        }
+
+        #Row2{
+            width: 300px;
+            height: 150px;
+            background-color: brown;
+        }
+        
+        .col1{
+            height: 150px;
+            width : 150px;
+            background-color: cadetblue;
+            float: left;
+        }
+
+        .col2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(62, 161, 203);
+            float: right;
+        }
+        
+        
+        </style>
     </head>
      
-    <body>
+    <body >
 
-        <div><!-- Main div -->
-            <div>
-            <div>Home</div>
-            <div>glide</div>
+        <div class="main"><!-- Main div -->
+
+           <div id="row1"  ><!--Parent div row1-->
+              <div class="col1"><!--col1-->
+                <center>Home</center>  
+              </div>
+              <div class="col2"><!--col2-->
+                  <center>About</center>
+              </div>
+           </div>
+            
+           <hr>
+            
+           <div id="Row2"  ><!--Parent div row2-->
+            <div class="col1"><!--col1-->
+                <center>Gallery</center>
             </div>
-            <div>other</div>
-        </div>
+            <div class="col2"><!--col2-->
+                <center>Contact</center>
+            </div>
+         </div>
+
+        </div><!--main div end -->
         
-
-
+        
 
 
     </body>
