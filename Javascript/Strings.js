@@ -21,5 +21,6 @@ console.log(str.indexOf('h'));
 
 const subStr = str.substring(0,4) ;// neg val not accepted in sub str
 
+
 const sliceStr = str.substring.slice(_-5,1) ; // neg value stsrts frm reverse
  
