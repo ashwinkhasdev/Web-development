@@ -1,4 +1,4 @@
-//its an object in js 
+//its an object in js ==========================================
 //#can contain diff datatype's var
 //#resizable
 
@@ -35,4 +35,34 @@ console.log(slcArr1);
 
 const splArr = newArr1.splice(1,4);
 console.log(newArr1);
-console.log(splArr);
+console.log(splArr); 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const exArr1 = ["nuts", "screw", "fiber","rage"] ;
+const exArr2 = [1,2,3,4,5];
+
+//exArr1.push(exArr2); // it not joins the sec arr it push it as var in it
+
+//console.log(exArr1);
+//console.log(exArr1[4][2]);
+
+const allVar = exArr1.concat(exArr2); //it combines two arr
+console.log(allVar);
+
+const newAllVar = [...exArr1, ...exArr2] ; //#spread arr -- it also combines but can contain more than 1 arr
+
+
+const arr5 = [1,2,3,[12,32,43],45,6,[91,92,[93,94],87]] ;
+const arrFlt5 = arr5.flat(Infinity); //# flat arr -- concatenate all sub-arr elements 
+
+//console.log(arrFlt5);
+
+
+console.log(Array.isArray("ask")); // is arry or not 
+console.log(Array.from("Ashwin")); // converts in array
+console.log(Array.from({name : "ask"})) ;// in this object is given nd it results empty coz we dont specified which val have to return like key , name or something
+
+
+
+
